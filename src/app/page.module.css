@@ -7,6 +7,15 @@
   min-height: 100vh;
   font-family: 'Lato';
 }
+.couple {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  font-family: 'Lato';
+}
 
 .description {
   display: inherit;

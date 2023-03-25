@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import styles from '../page.module.css'
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 import ResponsiveAppBar from '@/components/appBar'
@@ -24,19 +24,18 @@ const theme = createTheme({
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Schedule() {
   return (
     <ThemeProvider theme={theme}>
       <ResponsiveAppBar />
       <main className={styles.main}>
-        <div className={styles.center}>
-          <h1 className="title">
-            June 6, 2024
+        <div className={styles.couple}>
+          <h1 className="Lucy">
+            Lucy
           </h1>
-          <br />
-          <h2 className="subtitle">
-            Miks & Luce
-          </h2>
+          <h1 className="Miko">
+            Miko
+          </h1>
         </div>
       </main>
     </ThemeProvider>

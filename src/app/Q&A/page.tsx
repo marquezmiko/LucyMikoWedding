@@ -24,21 +24,14 @@ const theme = createTheme({
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function QandA() {
   return (
     <ThemeProvider theme={theme}>
       <ResponsiveAppBar />
-      <main className={styles.main}>
-        <div className={styles.center}>
-          <h1 className="title">
-            June 6, 2024
-          </h1>
-          <br />
-          <h2 className="subtitle">
-            Miks & Luce
-          </h2>
-        </div>
-      </main>
+        <ul>
+          <li>Q</li>
+          <li>A</li>
+        </ul>
     </ThemeProvider>
   )
 }
