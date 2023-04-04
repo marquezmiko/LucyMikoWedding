@@ -90,7 +90,7 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <Link href={`/${page}`} >
+                <Link key={page} href={`/${page}`} >
                   <MenuItem key={page} onClick={handleCloseNavMenu} >
                     <Typography textAlign="center" >{page}</Typography>
                   </MenuItem>
@@ -109,7 +109,7 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'Lora',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
@@ -120,7 +120,7 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link href={`/${page}`} >
+              <Link key={page} href={`/${page}`} >
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}

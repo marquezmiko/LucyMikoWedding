@@ -3,41 +3,14 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '../page.module.css'
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-
-import ResponsiveAppBar from '@/components/appBar'
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#0c4812',
-    },
-    secondary: {
-      main: '#f56608',
-    },
-  },
-  typography: {
-    fontFamily: 'Lora',
-    fontSize: 16,
-  },
-});
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Schedule() {
   return (
-    <ThemeProvider theme={theme}>
-      <ResponsiveAppBar />
-      <main className={styles.main}>
-        <div className={styles.couple}>
-          <h1 className="Lucy">
-            Lucy
-          </h1>
-          <h1 className="Miko">
-            Miko
-          </h1>
-        </div>
-      </main>
-    </ThemeProvider>
+    <div className={styles.schedule}>
+      <h1>Schedule</h1>
+      <iframe src="https://giphy.com/embed/13B40FkhzSC2c" width="480" height="360" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/popkey-katya-wig-13B40FkhzSC2c">via GIPHY</a></p>
+    </div>
   )
 }
