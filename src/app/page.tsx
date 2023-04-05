@@ -43,13 +43,14 @@ export default function Home() {
               June 7, 2024
             </h2>
             <h3>
-              Paliku Gardens
+              Paliku Gardens at Kualoa Ranch
               <br />
               Oahu, Hawaii
             </h3>
           </div>
         </div>
         <div className={styles.coupleParallax}>
+          <h1 className="coupleTitle">The Couple</h1>
           <Couple />
         </div>
         <div className={styles.scheduleParallax}>

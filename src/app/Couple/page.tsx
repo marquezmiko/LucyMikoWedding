@@ -13,7 +13,6 @@ export default function Couple() {
   return (
     
       <div className={styles.couple} >
-        <h1 className="coupleTitle">The Couple</h1>
         <div className="Lucy">
           <h1 className="Lucy">
             Lucy

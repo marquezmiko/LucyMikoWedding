@@ -84,6 +84,20 @@
   flex-direction: row;
   font-family: 'Lato';
   justify-content: space-evenly;
+  padding: 20px;
+}
+
+.scheduleParallax {
+  /* background-image: url('/Tina.gif'); */
+
+  /* min-height: 500px; */
+  height: 100vh;
+
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .schedule {
@@ -92,6 +106,7 @@
   font-family: 'Lato';
   align-items: center;
   justify-content: space-evenly;
+  padding: 20px;
 }
 
 /* Enable hover only on non-touch devices */
