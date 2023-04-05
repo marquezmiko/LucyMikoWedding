@@ -3,35 +3,29 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '../page.module.css'
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-import ResponsiveAppBar from '@/components/appBar'
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#0c4812',
-    },
-    secondary: {
-      main: '#f56608',
-    },
-  },
-  typography: {
-    fontFamily: 'Lora',
-    fontSize: 16,
-  },
-});
+import { Grid, Paper } from '@mui/material';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function QandA() {
   return (
-    <ThemeProvider theme={theme}>
-      <ResponsiveAppBar />
-        <ul>
-          <li>Q</li>
-          <li>A</li>
-        </ul>
-    </ThemeProvider>
+    <Grid container spacing={0}>
+      <Paper>
+        Q: Why Hawaii?
+        <br />
+        A: most of Lucy's guests are based in Texas, however the ranch-style aesthetic
+        of most venues was not appealing. Miko's guests are coming from all over including
+        Singapore, so he wanted somewhere that would be worth multiple vacation days and
+        long flights. Once we realized Hawaii would be just as expensive venue-wise as Texas
+        or Florida, the decision was made!
+      </Paper>
+      <Paper>
+        Q: where should we stay?
+        <br />
+        A: Kualoa Ranch is between a 35-40 minute drive from Honolulu. There are hotel options
+        all over the island.
+      </Paper>
+    </Grid>
   )
 }

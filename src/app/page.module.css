@@ -109,6 +109,50 @@
   padding: 20px;
 }
 
+.qAndAParallax {
+  /* background-image: url('/Tina.gif'); */
+
+  /* min-height: 500px; */
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 200px 0 100px 0;
+}
+
+.qAndA {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato';
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.registryParallax {
+  /* background-image: url('/Tina.gif'); */
+
+  /* min-height: 500px; */
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* margin: 200px 0 100px 0; */
+}
+
+.registry {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lato';
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

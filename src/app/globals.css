@@ -83,12 +83,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
-  /* background-size: 100% auto;
-  background-image: url('/Miks_and_Luce_45.PNG');
-  background-repeat: no-repeat; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -106,7 +101,7 @@ body {
 } */
 
 a {
-  color: inherit;
+  color: blue;
   text-decoration: none;
 }
 
@@ -114,6 +109,13 @@ ul{
   list-style-type:none;
   display:table;
   margin:0 auto;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -64px; /* Offset for fixed header */
+  visibility: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
