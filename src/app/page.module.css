@@ -59,6 +59,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  /* font-family: "agatha"; */
 }
 
 .coupleParallax {
@@ -77,6 +79,8 @@
 .coupleTitle {
   position: sticky;
   top: 64px;
+  padding: 20px;
+
 }
 
 .couple {
@@ -91,13 +95,20 @@
   /* background-image: url('/Tina.gif'); */
 
   /* min-height: 500px; */
-  height: 100vh;
+  height: auto;
+
+  background-color: #528780;
 
   /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.scheduleTitle {
+  padding: 20px;
+  color: white;
 }
 
 .schedule {
@@ -114,12 +125,17 @@
 
   /* min-height: 500px; */
   /* parallax scrolling effect */
+  /* background-color: aquamarine; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   margin: 200px 0 100px 0;
+}
+
+.qAndATitle {
+  padding: 20px;
 }
 
 .qAndA {
@@ -136,6 +152,7 @@
 
   /* min-height: 500px; */
   /* parallax scrolling effect */
+  background-color: #FFF7EE;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +161,39 @@
   /* margin: 200px 0 100px 0; */
 }
 
+.registryTitle {
+  padding: 20px;
+}
+
 .registry {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lato';
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.rsvpParallax {
+  /* background-image: url('/Tina.gif'); */
+
+  height: 100vh;
+
+  background-color: #528780;
+
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rsvpTitle {
+  padding: 20px;
+  color: white;
+}
+
+.rsvp {
   display: flex;
   flex-direction: row;
   font-family: 'Lato';

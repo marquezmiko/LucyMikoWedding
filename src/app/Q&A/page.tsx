@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import styles from '../page.module.css'
 
 import { Grid, Paper } from '@mui/material';
+import Carousel from 'react-material-ui-carousel'
 
 const inter = Inter({ subsets: ['latin'] })
 

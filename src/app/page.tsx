@@ -10,6 +10,7 @@ import Couple from './Couple/page';
 import Schedule from './Schedule/page';
 import QandA from './Q&A/page';
 import Registry from './Registry/page';
+import RSVP from './RSVP/page';
 
 const theme = createTheme({
   palette: {
@@ -52,20 +53,24 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.coupleParallax}>
-          <a className="anchor" id="Couple"></a><h1 className="coupleTitle">The Couple</h1>
+          <a className="anchor" id="Couple"></a><h1 className={styles.coupleTitle}>The Couple</h1>
           <Couple />
         </div>
         <div className={styles.scheduleParallax}>
-          <a className="anchor" id="Schedule"></a><h1 className="scheduleTitle">Schedule</h1>
+          <a className="anchor" id="Schedule"></a><h1 className={styles.scheduleTitle}>Schedule</h1>
           <Schedule />
         </div>
         <div className={styles.qAndAParallax}>
-          <a className="anchor" id="Q&A"></a><h1 className="qAndATitle">Q & A</h1>
+          <a className="anchor" id="Q&A"></a><h1 className={styles.qAndATitle}>Q & A</h1>
           <QandA />
         </div>
         <div className={styles.registryParallax}>
-          <a className="anchor" id="Registry"></a><h1 className="registryTitle">Registry</h1>
+          <a className="anchor" id="Registry"></a><h1 className={styles.registryTitle}>Registry</h1>
           <Registry />
+        </div>
+        <div className={styles.rsvpParallax}>
+        <a className="anchor" id="RSVP"></a><h1 className={styles.rsvpTitle}>RSVP</h1>
+          <RSVP />
         </div>
       </main>
     </ThemeProvider>

@@ -74,9 +74,10 @@
 }
 
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0; */
+  font-family: "lora";
 }
 
 html,
@@ -94,11 +95,16 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-size: 100%;
 }
 
-/* body, html {
-  height: 100%;
-} */
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
 
 a {
   color: blue;
