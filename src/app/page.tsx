@@ -12,6 +12,8 @@ import QandA from './Q&A/page';
 import Registry from './Registry/page';
 import RSVP from './RSVP/page';
 
+import ScrollButton from '../ScrollButton';
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -72,6 +74,7 @@ export default function Home() {
         <a className="anchor" id="RSVP"></a><h1 className={styles.rsvpTitle}>RSVP</h1>
           <RSVP />
         </div>
+        <ScrollButton />
       </main>
     </ThemeProvider>
   )
