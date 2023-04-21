@@ -195,11 +195,15 @@
 
 .rsvp {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: 'Lato';
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+}
+
+.rsvp>div {
+  margin: 10px;
 }
 
 /* Enable hover only on non-touch devices */
