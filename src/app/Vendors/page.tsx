@@ -9,16 +9,25 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Vendors() {
   return (
     <div className={styles.vendors}>
-      <h1>Huge thank you to our vendors!</h1>
-      <ul>
+      <ul className={styles.vendorList}>
         <li>
-          <a href="https://pilialohaproductions.com/">Planner: Pilialoha Productions</a>
+          <a href="https://pilialohaproductions.com/">
+            <img src="/PP_LOGO.png" alt="Pilialoha Logo" width="200px" />
+            {/* Planner: Pilialoha Productions */}
+          </a>
+          
         </li>
         <li>
-          <a href="https://www.kualoa.com/">Venue: Paliku Gardens at Kualoa Ranch</a>
+          <a href="https://www.kualoa.com/">
+            <img src="/KUALOA_LOGO.png" alt="Kualoa Logo" width="200px" />
+            {/* Venue: Paliku Gardens at Kualoa Ranch */}
+          </a>
         </li>
         <li>
-          <a href="https://seekingfilms.com/">Photography/Videography: Seeking Films</a>
+          <a href="https://seekingfilms.com/">
+            <img src="/SF_LOGO.png" alt="Seeking Films Logo" width="200px" />
+            {/* Photography/Videography: Seeking Films */}
+          </a>
         </li>
       </ul>
     </div>

@@ -67,7 +67,7 @@
   background-image: url('/Miks_and_Luce_45.png');
 
   /* min-height: 500px; */
-  height: 100vh;
+  /* height: 100vh; */
 
   /* parallax scrolling effect */
   background-attachment: fixed;
@@ -85,9 +85,21 @@
 
 .couple {
   display: flex;
+  flex-direction: column;
+  font-family: 'Lato';
+  align-items: center;
+  padding: 20px;
+}
+
+.coupleCards {
+  display: flex;
   flex-direction: row;
   font-family: 'Lato';
   justify-content: space-evenly;
+  padding: 20px;
+}
+
+.coupleCard {
   padding: 20px;
 }
 
@@ -208,6 +220,9 @@
 
 .vendorsTitle {
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vendors {
@@ -217,6 +232,10 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+}
+
+.vendorList>li {
+  margin: 30px;
 }
 
 .vendorsParallax {

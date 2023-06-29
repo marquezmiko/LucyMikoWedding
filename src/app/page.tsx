@@ -76,7 +76,7 @@ export default function Home() {
           <RSVP />
         </div>
         <div className={styles.vendorsParallax}>
-        <a className="anchor" id="Vendors"></a><h1 className={styles.vendorsTitle}>Vendors</h1>
+        <a className="anchor" id="Vendors"></a><h1 className={styles.vendorsTitle}>Thank You to our Vendors!</h1>
           <Vendors />
         </div>
         <div className={styles.scrollButton}>
