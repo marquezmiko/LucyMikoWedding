@@ -206,6 +206,45 @@
   margin: 10px;
 }
 
+.vendorsTitle {
+  padding: 20px;
+}
+
+.vendors {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato';
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.vendorsParallax {
+  /* background-image: url('/Tina.gif'); */
+
+  /* min-height: 500px; */
+  /* parallax scrolling effect */
+  background-color: #f1a54e;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* margin: 200px 0 100px 0; */
+}
+
+.scrollButton {
+  position: fixed; 
+  width: 100%;
+  left: 90%;
+  bottom: 40px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: black;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

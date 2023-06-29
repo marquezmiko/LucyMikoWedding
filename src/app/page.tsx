@@ -11,6 +11,7 @@ import Schedule from './Schedule/page';
 import QandA from './Q&A/page';
 import Registry from './Registry/page';
 import RSVP from './RSVP/page';
+import Vendors from './Vendors/page';
 
 import ScrollButton from '../ScrollButton';
 
@@ -74,7 +75,13 @@ export default function Home() {
         <a className="anchor" id="RSVP"></a><h1 className={styles.rsvpTitle}>RSVP</h1>
           <RSVP />
         </div>
-        <ScrollButton />
+        <div className={styles.vendorsParallax}>
+        <a className="anchor" id="Vendors"></a><h1 className={styles.vendorsTitle}>Vendors</h1>
+          <Vendors />
+        </div>
+        <div className={styles.scrollButton}>
+          <ScrollButton />
+        </div>
       </main>
     </ThemeProvider>
   )

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 const ScrollButton = () =>{
 
@@ -23,25 +23,13 @@ const scrollToTop = () =>{
 	});
 };
 
-const Button = styled.div`
-   position: fixed; 
-   width: 100%;
-   left: 90%;
-   bottom: 40px;
-   height: 20px;
-   font-size: 3rem;
-   z-index: 1;
-   cursor: pointer;
-   color: black;
-`
-
 window.addEventListener('scroll', toggleVisible);
 
 return (
-	<Button>
+	<div>
 	<FaArrowCircleUp onClick={scrollToTop}
 	style={{display: visible ? 'inline' : 'none'}} />
-	</Button>
+	</div>
 );
 }
 
